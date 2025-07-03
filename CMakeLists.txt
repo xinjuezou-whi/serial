@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 3.5)
 project(serial)
 
-# Find catkin
+# Find ament
 find_package(ament_cmake REQUIRED)
+
+option(BUILD_SHARED_LIBS "Build shared libraries" ON)
 
 if(APPLE)
   find_library(IOKIT_LIBRARY IOKit)
